@@ -1,0 +1,287 @@
+@font-face {
+  font-family: 'GTWalsheimPro-Regular';
+  src: url('../assets/GTWalsheimPro-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Freight Micro Black';
+  src: url('../assets/Freight\ Micro\ Book.otf') format('opentype');
+}
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+header, nav, section, aside, footer{
+    display: block;
+  }
+
+/* Header's Background */
+#wrap {
+  overflow: hidden;
+  color: #fff;
+  background: url('../assets/background.jpg') 50% no-repeat #14151b;
+  background-size: cover;
+  font-size: 17pt;
+}  
+
+/* 
+
+.col-sm for larger mobile phones (devices with resolutions ≥ 576px);
+.col-md for tablets (≥768px);
+.col-lg for laptops (≥992px);
+.col-xl for desktops (≥1200px)
+
+*/
+
+/*****************************NAV*************************************/
+#wrap nav {font-family: "Rubik";}
+/* My name Text */
+#wrap #myName {
+  margin-left: 5%; 
+  font-size: 25px; 
+  font-weight: 900;
+  color: #FFF; 
+}
+/* My name Underline Bar */
+#wrap #myName:after {
+  content: ""; /* This is necessary for the pseudo element to work. */ 
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 0 auto;  /*This will center the border. */
+  width: 40%; /* Change this to whatever width you want. */
+  line-height: 1.5; /* This creates some space between the element and the border. */
+  border-bottom: 5px solid #4B6CC1; /* This creates the border. Replace black with whatever color you want. */
+  border-radius: 10px;
+}
+/* Nav Items */
+#wrap a {color: #5e5e5e; margin-top: 10px; font-size: 22px; font-weight: 500;}
+#wrap a:active, #wrap a:hover {color: #fff;}
+/* Burguer Button */
+.navbar-custom .navbar-toggler {
+  color: #4B6CC1;
+}
+.navbar-custom .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+/*****************************NAV*************************************/
+
+
+/****************************HEADER***********************************/
+
+/* Hello everyone Text */
+#wrap #helloText {
+  display: inline-block;
+  font-family: 'Freight Micro Book';
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-left: 15%;
+  margin-top: 15%;
+  margin-bottom: 2%;
+}
+
+/* Description Text */
+#wrap p {
+  font-family: "Rubik","Arial",sans-serif;
+  font-size: 37px;
+  line-height: normal;
+  margin-left: 15%;
+}
+
+/* Picture Frame */
+#figure {
+  background-color: #121316;
+  max-height: 447px;
+  max-width: 405px;
+  border-radius: 6px;
+  padding: 50px;
+  margin-bottom: 200px;
+}
+
+/* Profile Picture */
+#myPicture {
+  /* 3648 - 100%
+     2545 - 100% */
+  height: 437px; /* 12% of original size */
+  width: 305px; /* 12% of original size */
+  border-radius: 6px;
+}
+
+/* Section Text */
+section span {
+  font-family: 'Raleway', sans-serif;
+  font-size: 30pt;
+  font-weight: bold;
+  color: #616161;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+/* Underline Bar */
+#underlineBar {
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 0 auto;  /*This will center the border. */
+  height: 6px;
+  width: 75px;
+  background-color: #4B6CC1;
+  /* margin-left: 47%; */
+  margin-bottom: 7%;
+  border-radius: 50px;
+}
+
+/************************HEADER*************************/
+
+/************************PROJECTS************************/
+
+
+.project-section {
+  margin-top: 7%;
+}
+
+.myContainer {
+  position: relative;
+  /* width: 50%; */
+}
+
+.myImage {
+  opacity: 0.9;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.myContainer:hover .overlay {
+  height: 100%;
+}
+
+.overlay_title {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
+  bottom: 0;
+  font-weight: 100;
+  font-size: 0.8em;
+  z-index: 3;
+  text-transform: uppercase;
+  color: #474545;
+  letter-spacing: 2px;
+}
+
+.viewbutton {
+  background: none;
+  outline: none;
+  font-weight: 100;
+  letter-spacing: 2px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 10px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.viewbutton:hover {
+  transition: all 0.3s ease-in-out;
+  background: #ffffff;
+  color: #4B6CC1;
+  transform: scale(1.05);
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+/************************PROJECTS************************/
+
+/**************************BLOG*************************/
+
+
+#blog {
+  width: 75%;
+  margin: auto;
+}
+
+.myFade {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.myFade:hover {
+  opacity: 0.6;
+}
+
+/**************************BLOG*************************/
+
+/************************CONTACT*************************/
+#contactWrap {
+  overflow: hidden;
+  background: url('../assets/background.jpg') 50% no-repeat #14151b;
+  background-size: cover;
+  margin-top: 10%;
+}
+
+#contact {
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+#contactWrap span {
+  color: #fff;
+}
+
+#workTogether {
+  font-family: "Rubik","Arial",sans-serif;
+  font-size: 37px;
+  color: #fff;
+}
+
+#enquiriesText {
+  color: #5e5e5e;
+}
+
+.bi-telegram, .bi-linkedin, .bi-github, .bi-instagram {
+  font-size: 2rem; 
+  color: #5e5e5e;
+  transition: 0.3s;
+}
+
+.bi-telegram:hover, .bi-linkedin:hover, .bi-github:hover, .bi-instagram:hover {
+  color: #4B6CC1;
+}
+/************************CONTACT*************************/
+
+/************************FOOTER*************************/
+
+footer {
+  background-color: #101114;
+  border-top: 1px solid #5e5e5e;
+  padding-top: 2%;
+  padding-bottom: 1%;
+  font-family: "Rubik","Arial",sans-serif;
+  color: #5e5e5e;
+}
+
+#copyright {
+  color: #4B6CC1;
+}
+
+/************************FOOTER*************************/
