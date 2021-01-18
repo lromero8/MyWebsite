@@ -1,0 +1,196 @@
+@font-face {
+    font-family: 'GTWalsheimPro-Regular';
+    src: url('../assets/GTWalsheimPro-Regular.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Freight Micro Black';
+    src: url('../assets/Freight\ Micro\ Book.otf') format('opentype');
+  }
+  
+  @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+  
+  header, nav, section, aside, footer{
+      display: block;
+    }
+  
+  /* Header's Background */
+  #wrap {
+    overflow: hidden;
+    color: #fff;
+    background: url('../assets/background.jpg') 50% no-repeat #14151b;
+    background-size: cover;
+    font-size: 17pt;
+  }
+  
+  /* 
+  
+  .col-sm for larger mobile phones (devices with resolutions ≥ 576px);
+  .col-md for tablets (≥768px);
+  .col-lg for laptops (≥992px);
+  .col-xl for desktops (≥1200px)
+  
+  */
+  
+  /*****************************NAV*************************************/
+  #wrap nav {font-family: "Rubik";}
+  /* My name Text */
+  #wrap #myName {
+    margin-left: 5%; 
+    font-size: 25px; 
+    font-weight: 900;
+    color: #FFF; 
+  }
+  /* My name Underline Bar */
+  #wrap #myName:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto;  /*This will center the border. */
+    width: 40%; /* Change this to whatever width you want. */
+    line-height: 1.5; /* This creates some space between the element and the border. */
+    border-bottom: 5px solid #4B6CC1; /* This creates the border. Replace black with whatever color you want. */
+    border-radius: 10px;
+  }
+  /* Nav Items */
+  #wrap a {color: #5e5e5e; margin-top: 10px; font-size: 22px; font-weight: 500;}
+  #wrap a:active, #wrap a:hover {color: #fff;}
+  /* Burguer Button */
+  .navbar-custom .navbar-toggler {
+    color: #4B6CC1;
+  }
+  .navbar-custom .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  /*****************************NAV*************************************/
+  
+  /****************************HEADER***********************************/
+  
+  
+  /* Header Text */
+  .header-text {
+    font-family: "Rubik","Arial",sans-serif;
+    font-size: 72px;
+    line-height: normal;
+    color: #fff;
+  }
+  
+  /* Description Header Text */
+  
+  .description-text {
+    font-family: "Rubik","Arial",sans-serif;
+    font-size: 37px;
+    color: #ababab;
+    margin-bottom: 7%;
+  }
+  
+  /************************HEADER**************************/
+  
+  
+  /************************CONTACT CONTENT**************************/
+
+  .container {
+      background-color: #F6F6F6;
+      border-radius: 6px;
+      border-top: 6px solid #4b6cc1;
+      margin-top: 10%;
+  }
+
+  #status-text {
+    font-family: "Rubik","Arial",sans-serif;
+    font-size: 34px;
+    font-weight: 600;
+    color: #000;
+    margin-top: 20%;
+    margin-bottom: 5%;
+  }
+
+  #available-text {
+    font-family: "Rubik","Arial",sans-serif;
+    font-size: 52px;
+    font-weight: 600;
+    color: #4b6cc1;
+    display: block;
+    margin-bottom: 5%;
+  }
+
+  #taking-text {
+    font-family: "Rubik","Arial",sans-serif;
+    font-size: 26px;
+    color: #5e5e5e;
+    margin-bottom: 20%;
+  }
+  
+  /************************CONTACT CONTENT**************************/
+  
+  /************************CONTACT*************************/
+  
+  #contactWrap {
+    overflow: hidden;
+    background: url('../assets/background.jpg') 50% no-repeat #14151b;
+    background-size: cover;
+    margin-top: 10%;
+  }
+  
+  #contact {
+    margin-top: 5%;
+    margin-bottom: 10%;
+  }
+  
+  #contactWrap span {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30pt;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7%;
+  }
+  
+  #underlineBar {
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto;  /*This will center the border. */
+    height: 6px;
+    width: 75px;
+    background-color: #4B6CC1;
+    /* margin-left: 47%; */
+    margin-bottom: 7%;
+    border-radius: 50px;
+  }
+  
+  #workTogether {
+    font-family: "Rubik","Arial",sans-serif;
+    font-size: 37px;
+    color: #fff;
+  }
+  
+  #enquiriesText {
+    color: #5e5e5e;
+  }
+  
+  .bi-telegram, .bi-linkedin, .bi-github, .bi-instagram {
+    font-size: 2rem; 
+    color: #5e5e5e;
+    transition: 0.3s;
+  }
+  
+  .bi-telegram:hover, .bi-linkedin:hover, .bi-github:hover, .bi-instagram:hover {
+    color: #4B6CC1;
+  }
+  /************************CONTACT*************************/
+  
+  /************************FOOTER*************************/
+  
+  footer {
+    background-color: #101114;
+    border-top: 1px solid #5e5e5e;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    font-family: "Rubik","Arial",sans-serif;
+    color: #5e5e5e;
+  }
+  
+  #copyright {
+    color: #4B6CC1;
+  }
+  
+  /************************FOOTER*************************/
