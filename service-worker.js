@@ -4,4 +4,3 @@ workbox.routing.registerRoute(
     ({request}) => request.destination === 'image',
     new workbox.strategies.CacheFirst()
   );
-console.log('Hello from service-worker.js');
