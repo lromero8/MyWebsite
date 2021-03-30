@@ -138,6 +138,7 @@ section .section-title {
 
 .skillbox {
   height: 400px;
+  margin: 5px;
 }
 
 #skills span {

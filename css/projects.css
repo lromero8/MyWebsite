@@ -114,6 +114,19 @@ header, nav, section, aside, footer{
   margin-left: 3%;
 }
 
+.heroku-icon-link, .github-icon-link{
+  text-decoration: none;
+  color: #5e5e5e;
+}
+
+.heroku-icon-link:hover, .fa-rocket:hover{
+  color: #79589f;
+}
+
+.github-icon-link:hover, .fa-github:hover{
+  color: #80BA01;
+}
+
 /************************PROJECTS**************************/
 
 /************************CONTACT*************************/
