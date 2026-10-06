@@ -11,7 +11,11 @@
 
 * { box-sizing: border-box; }
 
-html { background: var(--page); }
+html { background: var(--page); scroll-behavior: smooth; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
 
 body {
   margin: 0;
@@ -57,6 +61,10 @@ h1 { font-size: clamp(42px, 5vw, 68px); letter-spacing: -.055em; line-height: .9
 h2 { font-size: 26px; letter-spacing: -.035em; line-height: 1.1; margin: 0; max-width: 360px; }
 .intro-copy { color: var(--muted); font-size: 13px; line-height: 1.7; max-width: 390px; }
 .intro-copy p { margin: 0 0 18px; }
+.skills-copy { max-width: none; }
+.skill-group { border-top: 1px solid var(--line); display: grid; gap: 16px; grid-template-columns: 90px 1fr; padding: 14px 0; }
+.skill-group h3 { color: var(--yellow); font: 10px var(--mono); margin: 2px 0 0; text-transform: uppercase; }
+.skill-group ul { color: var(--ink); display: flex; flex-wrap: wrap; gap: 4px 13px; list-style: none; margin: 0; padding: 0; }
 .site-footer { border-top: 1px solid var(--line); color: var(--muted); font: 10px var(--mono); }
 .footer-links { display: grid; gap: 28px; grid-template-columns: repeat(4, 1fr); padding: 54px 29px 61px; }
 .footer-column { gap: 10px; }
